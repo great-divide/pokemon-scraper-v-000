@@ -17,7 +17,7 @@ class Pokemon
     foo = db.execute("SELECT * FROM pokemon WHERE pokemon.id = id")
     foo.flatten!
     # binding.pry
-    bar = Pokemon.new(id: foo[0], name: foo[1], type: foo[2], db: @db, hp: foo[4])
+    bar = Pokemon.new(id: foo[0], name: foo[1], type: foo[2], db: @db, hp: foo[3])
     bar
   end
   
